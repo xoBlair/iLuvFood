@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   resources :recipes
   resources :users
 
-  get '/login' => 'login#login_form'
-  post '/login' => 'login#check_login'
+  get '/login' => 'sessions#login_form'
+  post '/login' => 'sessions#check_login'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

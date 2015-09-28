@@ -23,13 +23,21 @@ default: &default
 
 development:
   <<: *default
+<<<<<<< HEAD
   database: iLuvFood_development
+=======
+  database: food_development
+>>>>>>> 12a092c498662560f292a5417b27f9ffed2c893b
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
+<<<<<<< HEAD
   #username: iLuvFood
+=======
+  #username: food
+>>>>>>> 12a092c498662560f292a5417b27f9ffed2c893b
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +65,11 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+<<<<<<< HEAD
   database: iLuvFood_test
+=======
+  database: food_test
+>>>>>>> 12a092c498662560f292a5417b27f9ffed2c893b
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +92,12 @@ test:
 #
 production:
   <<: *default
+<<<<<<< HEAD
   database: iLuvFood_production
   username: iLuvFood
   password: <%= ENV['ILUVFOOD_DATABASE_PASSWORD'] %>
+=======
+  database: food_production
+  username: food
+  password: <%= ENV['FOOD_DATABASE_PASSWORD'] %>
+>>>>>>> 12a092c498662560f292a5417b27f9ffed2c893b

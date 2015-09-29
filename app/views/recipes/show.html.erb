@@ -9,9 +9,8 @@
   <%= @recipe.recipe %>
 </p>
 <p>
-  <strong>Link:</strong>
-  <%= @recipe.link %>
-
+	<strong>Image:</strong>
+	<img src="<%= @recipe.image.url(:medium) %>">
 </p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |

@@ -9,6 +9,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav class="navbar navbar-inverse header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home">Scarf</a>
+    </div>
+    <img class="col-sm-1 logo" src="http://thumb1.shutterstock.com/display_pic_with_logo/2390648/213683494/stock-vector-pizza-slice-icon-213683494.jpg">
+    <div>
+	    <% if logged_in? %>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="users/new"><span class="glyphicon glyphicon-user"></span> Sign Down</a></li>
+          <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+       </ul>
+
+      <% else %>
+      <ul class="nav navbar-nav navbar-right">
+	    	<li><a href="users/new"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	     </ul>
+	     <% end %>
+    </div>
+  </div>
+</nav>
 
 		<%= yield %>
 

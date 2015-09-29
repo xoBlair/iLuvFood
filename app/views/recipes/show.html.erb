@@ -4,20 +4,14 @@
   <strong>Title:</strong>
   <%= @recipe.title %>
 </p>
-
-<p>
-  <strong>Link:</strong>
-  <%= @recipe.link %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @recipe.image %>
-</p>
-
 <p>
   <strong>Recipe:</strong>
   <%= @recipe.recipe %>
+</p>
+<p>
+  <strong>Link:</strong>
+  <%= @recipe.link %>
+
 </p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |

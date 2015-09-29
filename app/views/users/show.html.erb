@@ -19,6 +19,9 @@
   <strong>Password:</strong>
   <%= @user.password %>
 </p>
-
+<p>
+	<strong>Avatar:</strong>
+	<img src="<%= @user.avatar.url(:medium) %>">
+</p>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

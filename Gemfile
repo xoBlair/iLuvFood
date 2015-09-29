@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
+gem 'puma'
+
+gem 'rails_12factor'
+
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :recipes
   resources :users
+  resources :home
 
   get '/login' => 'sessions#login_form'
   post '/login' => 'sessions#check_login'

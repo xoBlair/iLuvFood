@@ -21,7 +21,7 @@
 </p>
 <p>
 	<strong>Avatar:</strong>
-	<img src="<%= @user.avatar.url(:medium) %>">
+	<img class="avatar" src="<%= @user.avatar.url(:thumb) %>">
 </p>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

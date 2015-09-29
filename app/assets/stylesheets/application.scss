@@ -1,3 +1,33 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.home {
+	background-image: url("http://confectionsofacottonpickinqueen.com/wp-content/uploads/2014/06/Dollarphotoclub_540377071.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.header {
+	background-color: #434371;
+	height: 80px;
+}
+.food_pics {
+	padding: 30px;
+}
+
+.logo {
+	max-width: 100%;
+	height: auto;
+	border-radius: 100%;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #17bebb;
+}
+.navbar-inverse .navbar-brand {
+    color: #17bebb;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'bootstrap-sass', '~> 3.3.5'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -28,6 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'twitter-bootstrap-rails'
+
+gem 'bootstrap-sass', '3.2.0.2'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

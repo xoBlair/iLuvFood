@@ -1,9 +1,63 @@
-== README
+== README ==
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Scarf. 
+vary your vittles
+————————
+
+Foodies are people who love eating and sharing cool new food ideas. Scarf is a simple way to search for, create, and post links to recipes with other foodies. Whether you are linking to a recipe from a popular blog or posting your own recipes and pictures, Scarf makes it easy to share your favorite food ideas. 
+
+
+For individuals not as familiar with the web/uploading images and links, we’ve implemented an option to enter a text-only recipe. It’s easy enough for Grandma to create an account and her classic cookie recipe using a form input with text only. 
+
+
+Creating a new account:
+To create a new account, click ‘New Account’  and enter your First name, Last name, e-mail address, and a password.
+
+
+Logging in:
+To log in, click ‘Log In’ and enter the e-mail address that was used to create your account. Then, enter your password and click ‘Submit.’
+
+
+Posting a new Recipe and Tagging:
+To create a new recipe post, click “New Recipe.”
+Enter the URL to the recipe OR type in your recipe using text. If typing your recipe, be sure to include ingredients, directions and any other important pieces of information that would be helpful when creating the dish. Also, when creating a new recipe, be sure to add tags like “breakfast” “roasted” “vegetarian” — this helps build a better Scarf experience!
+
+
+Logging Out:
+To log out of your account, click ‘Log Out’ in the top right corner.
+
+
+View All Recipes:
+To view all recipes, click ‘View All’ at the bottom of your account page.
+
+
+
+Technologies Used:
+
+Ruby on Rails
+BCrypt
+PostgreSQL
+PGAdmin
+Bootstrap
+Heroku
+Sublime
+HTML/CSS
+GitHub
+Pivotal Tracker
+
+
+
+
+
+
+
+
+
+
+
+
+------------
 
 * Ruby version
 
@@ -18,11 +72,10 @@ Things you may want to cover:
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+----------------------------------------------
+

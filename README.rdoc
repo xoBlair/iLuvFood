@@ -23,13 +23,15 @@ Posting a new Recipe and Tagging:
 To create a new recipe post, click “New Recipe.”
 Enter the URL to the recipe OR type in your recipe using text. If typing your recipe, be sure to include ingredients, directions and any other important pieces of information that would be helpful when creating the dish. Also, when creating a new recipe, be sure to add tags like “breakfast” “roasted” “vegetarian” — this helps build a better Scarf experience!
 
+View All Recipes:
+To view all recipes, click ‘View All’ at the bottom of your account page.
+
 
 Logging Out:
 To log out of your account, click ‘Log Out’ in the top right corner.
 
 
-View All Recipes:
-To view all recipes, click ‘View All’ at the bottom of your account page.
+
 
 
 

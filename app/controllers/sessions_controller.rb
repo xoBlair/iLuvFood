@@ -17,4 +17,10 @@ class SessionsController < ApplicationController
             redirect_to '/login?err=1'
         end
     end
+
+    def destroy
+        log_out
+        
+        redirect_to '/'
+    end
 end

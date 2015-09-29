@@ -19,8 +19,15 @@
     <div>
 	    <% if logged_in? %>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="users/new"><span class="glyphicon glyphicon-user"></span> Sign Down</a></li>
-          <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+      	<div class="col-sm-2 username">
+	      	<%= @current_user.first_name %>
+	      	<%= @current_user.last_name %>
+      	</div>
+      	<div class="col-sm-1"></div>
+	    <img class="avatar col-sm-3" src="<%= @current_user.avatar.url(:thumb) %>">
+	    <li>
+	    	<a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Log Out</a>
+	    </li>
        </ul>
 
       <% else %>

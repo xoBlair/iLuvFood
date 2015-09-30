@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get '/logout'  => 'sessions#destroy'
   get '/profile' => 'profile#profile'
+  patch '/users' => 'users#update'
 
   patch '/users' => 'users#update'
 

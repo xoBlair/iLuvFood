@@ -1,16 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @recipe.title %>
+	<strong>Title:</strong>
+	<%= @recipe.title %>
 </p>
 <p>
-  <strong>Recipe:</strong>
-  <%= @recipe.recipe %>
+	<strong>Recipe:</strong>
+	<%= @recipe.recipe %>
 </p>
 <p>
 	<strong>Image:</strong>
 	<img src="<%= @recipe.image.url(:medium) %>">
+</p>
+<p>
+  	<strong>Tags:</strong>
+  	<% @recipe.tags.each do |tag| %>
+    	<%= link_to tag.name, tag_path(tag) %>
+  	<% end %>
 </p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |

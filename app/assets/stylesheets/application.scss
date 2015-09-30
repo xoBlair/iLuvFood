@@ -13,6 +13,7 @@ body {
 }
 
 .logo {
+	margin-top: -5px;
 	max-width: 65%;
 	height: auto;
 }
@@ -20,12 +21,6 @@ body {
 .food_pics {
 	padding: 30px;
 }
-
-/*.logo {
-	max-width: 100%;
-	height: auto;
-	border-radius: 100%;
-}*/
 
 .nav.navbar-nav.navbar-right li a {
     color: #85d9da;
@@ -36,8 +31,8 @@ body {
 }
 
 .avatar {
-	margin-top: 1px;
-	max-width: 100%;
+	margin-top: -14px;
+	max-width: 10%;
 	height: auto;
 	border-radius: 100%;
 }
@@ -52,6 +47,10 @@ body {
 	display: block;
 	height: auto;
 	max-width: 100%;
+}
+
+.logout {
+	margin-top: 20px;
 }
 
 /*

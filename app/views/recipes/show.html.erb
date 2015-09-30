@@ -13,11 +13,10 @@
 	<img src="<%= @recipe.image.url(:medium) %>">
 </p>
 <p>
-  	<strong>Tags:</strong>
-  	<% @recipe.tags.each do |tag| %>
-    	<%= link_to tag.name, tag_path(tag) %>
-  	<% end %>
+  <strong>Tags:</strong>
+  <% @article.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
 </p>
-
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>

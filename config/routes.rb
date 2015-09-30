@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   get '/profile' => 'profile#profile'
   patch '/users' => 'users#update'
 
-  patch '/users' => 'users#update'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

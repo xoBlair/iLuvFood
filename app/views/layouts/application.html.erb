@@ -10,38 +10,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<nav class="navbar navbar-inverse header">
+<nav class="navbar navbar-inverse header">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/home"><img class="logo" src="/assets/scarflogo.png"></a>
     </div>
-<!--     <img class="col-md-1 col-sm-1 col-xs-1 logo img-responsive" src="http://thumb1.shutterstock.com/display_pic_with_logo/2390648/213683494/stock-vector-pizza-slice-icon-213683494.jpg">
- -->    <div class="row">
+    <div class="row">
 	    <% if logged_in? %>
-      <ul class="nav navbar-nav navbar-right">
-      	<div class="col-md-3 col-sm-3 col-xs-3 username">
-	      	<p>Welcome, <%= @current_user.first_name %>
-	      	</p>
-      	</div>
-        <li><a class="navbar-brand" href="/profile">Profile</a></li>
-      	<div class="col-sm-1"></div>
-      <img class="avatar col-md-2 col-sm-2 col-xs-2 img-responsive" src="<%= @current_user.avatar.url(:thumb) %>">
-	    <li>
-	    	<a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Log Out</a>
-	    </li>
-       </ul>
-
+      		<ul class="nav navbar-nav navbar-right">
+      			<div class="col-md-3 col-sm-3 col-xs-3 username">
+	      			<p>Welcome, <%= @current_user.first_name %>
+	      			</p>
+      			</div>
+      			<div class="col-md-1 col-sm-1 col-xs-1"></div>
+      			<div class="col-md-3 col-sm-3 col-xs-3">
+        			<li><a class="navbar-brand" href="/profile"><img class="avatar  img-responsive" src="<%= @current_user.avatar.url(:thumb) %>"></a></li>
+        		</div>
+	    			<li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+       		</ul>
       <% else %>
-      <ul class="nav navbar-nav navbar-right">
+      	<ul class="nav navbar-nav navbar-right">
 	    	<li><a href="users/new"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 	        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-	     </ul>
-	     <% end %>
+	    </ul>
+	   <% end %>
     </div>
   </div>
 </nav>
 
-		<%= yield %>
+	<%= yield %>
 
 </body>
 </html>

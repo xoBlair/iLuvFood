@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'profile/profile'
+
   resources :recipes
   resources :users
   resources :home
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#check_login'
 
   get '/logout'  => 'sessions#destroy'
-
+  get '/profile' => 'profile#profile'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

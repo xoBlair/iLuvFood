@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+
 	def login_form
 
     end
@@ -9,10 +10,10 @@ class SessionsController < ApplicationController
         if user && user.authenticate(params[:password])
             # Valid login, set the session and redirect to protected destination
             session[:current_user_id] = user.id
-
             redirect_to '/'
         else 
             # Not a match, redirect to the login page 
+            flash[:notice] = "You have entered an invalid password"
             redirect_to '/login?err=1'
         end
     end

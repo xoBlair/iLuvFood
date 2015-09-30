@@ -1,8 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.home {
-	background-image: url("http://confectionsofacottonpickinqueen.com/wp-content/uploads/2014/06/Dollarphotoclub_540377071.jpg");
+body {
+	background: url(Dollarphotoclub-25op.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
@@ -11,29 +11,47 @@
 	background-color: #434371;
 	height: 80px;
 }
+
+.logo {
+	max-width: 65%;
+	height: auto;
+}
+
 .food_pics {
 	padding: 30px;
 }
 
-.logo {
+/*.logo {
+	max-width: 100%;
+	height: auto;
+	border-radius: 100%;
+}*/
+
+.nav.navbar-nav.navbar-right li a {
+    color: #85d9da;
+    margin-right: 15px;
+}
+.navbar-inverse .navbar-brand {
+    color: #85d9da;
+}
+
+.avatar {
+	margin-top: 9px;
 	max-width: 100%;
 	height: auto;
 	border-radius: 100%;
 }
-
-.nav.navbar-nav.navbar-right li a {
-    color: #17bebb;
-}
-.navbar-inverse .navbar-brand {
-    color: #17bebb;
-}
-
-.avatar {
-	border-radius: 100%;
-}
 .username {
-	color: #17bebb;
+	padding: 12px;
+	color: #85d9da;
 	text-align: center;
+	font-size: 14px;
+}
+
+.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
 
 /*

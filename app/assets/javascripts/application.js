@@ -19,3 +19,4 @@
 //= require_tree .
 
 <%= javascript_include_tag :defaults %>
+

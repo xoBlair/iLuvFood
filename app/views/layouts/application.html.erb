@@ -14,15 +14,14 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/home">Scarf</a>
-    </div>
-    <img class="col-sm-1 logo" src="http://thumb1.shutterstock.com/display_pic_with_logo/2390648/213683494/stock-vector-pizza-slice-icon-213683494.jpg">
-    <div>
+    <img class="col-md-1 logo" src="http://thumb1.shutterstock.com/display_pic_with_logo/2390648/213683494/stock-vector-pizza-slice-icon-213683494.jpg">
 	    <% if logged_in? %>
       <ul class="nav navbar-nav navbar-right">
       	<div class="col-sm-2 username">
 	      	<%= @current_user.first_name %>
 	      	<%= @current_user.last_name %>
       	</div>
+        <li><a class="navbar-brand" href="/profile">Profile</a></li>
       	<div class="col-sm-1"></div>
 	    <img class="avatar col-sm-3" src="<%= @current_user.avatar.url(:thumb) %>">
 	    <li>

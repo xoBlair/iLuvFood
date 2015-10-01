@@ -11,29 +11,30 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse header">
-  <div class="container-fluid">
-    <div class="navbar-header col-md-3 col-sm-3 col-xs-3">
+  <div class="row container-fluid">
+    <div class="navbar-header col-md-2 col-sm-2 col-xs-2">
       <a class="navbar-brand" href="/home"><img class="logo" src="/assets/scarflogo.png"></a>
     </div>
+    <div class="about col-md-1 col-sm-1 col-xs-1"><a href="#">About Scarf</a></div>
     
 	    <% if logged_in? %>
 	    <div class="row">
       		<ul class="nav navbar-nav navbar-right">
+      			<li><a href="/recipes">All Recipes</a></li>
       			<li><a href="/recipes/new">New Recipe</a></li>
       			<div class="col-md-2 col-sm-2 col-xs-2 username">
 	      			<li><p>Welcome, <%= @current_user.first_name %></li>
 	      			</p>
       			</div>
-      			<div class="col-md-1 col-sm-1 col-xs-1"></div>
-      			<div class="col-md-3 col-sm-3 col-xs-3">
-        			<li><a class="navbar-brand" href="/profile"><img class="avatar  img-responsive" src="<%= @current_user.avatar.url(:thumb) %>"></a></li>
+      			<div class="col-md-2 col-sm-2 col-xs-2">
+        			<li><a class="navbar-brand" href="/profile"><img class="avatar  img-responsive" src="<%= @current_user.avatar.url(:thumb) %>" alt="avatar"></a></li>
         		</div>
         		<div class="col-md-3 col-sm-3 col-xs-3 logout">
 	    			<li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
 	    		</div>
        		</ul>
        	</div>
-      <% else %>
+      	<% else %>
       	<ul class="nav navbar-nav navbar-right">
 	    	<li><a href="users/new"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 	        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

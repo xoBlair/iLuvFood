@@ -13,9 +13,17 @@ body {
 }
 
 .logo {
-	margin-top: -5px;
-	max-width: 65%;
+	margin-top: 0px;
+	max-width: 90%;
 	height: auto;
+}
+
+.navbar-inverse .about a {
+	color: #85d9da;
+}
+
+.about {
+	margin-top: 30px;
 }
 
 .food_pics {
@@ -24,21 +32,26 @@ body {
 
 .nav.navbar-nav.navbar-right li a {
     color: #85d9da;
-    margin-right: 15px;
 }
 .navbar-inverse .navbar-brand {
     color: #85d9da;
 }
 
+.navbar-right {
+	margin-top: 15px;
+}
+
 .avatar {
-	margin-top: -14px;
-	max-width: 10%;
-	height: auto;
 	border-radius: 100%;
+	margin-top: -16px;
+	width: 100%;
+	height: auto;
+	
 }
 .username {
+	margin-top: -8px;
 	padding: 12px;
-	color: #85d9da;
+	color: #9a9ba5;
 	text-align: center;
 	font-size: 14px;
 }
@@ -50,7 +63,13 @@ body {
 }
 
 .logout {
-	margin-top: 20px;
+	margin-top: 15px;
+}
+
+.userpage-avatar {
+	max-width: 100%;
+	height: auto;
+	border-radius: 100%;
 }
 
 

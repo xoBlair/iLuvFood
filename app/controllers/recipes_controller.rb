@@ -43,6 +43,7 @@ class RecipesController < ApplicationController
   # PATCH/PUT /recipes/1.json
   def update
     respond_to do |format|
+
       if @recipe.update(recipe_params)
         format.html { redirect_to @recipe, notice: 'Recipe was successfully updated.' }
         format.json { render :show, status: :ok, location: @recipe }
@@ -73,6 +74,6 @@ class RecipesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     ##########  add avatar here? #######
     def recipe_params
-      params.require(:recipe).permit(:title, :image, :recipe, :user_id)
+      params.require(:recipe).permit(:title, :image, :recipe, :tag_list, :user_id)
     end
 end

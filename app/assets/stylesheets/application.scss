@@ -9,13 +9,12 @@ body {
 
 .header {
 	background-color: #434371;
-	height: 80px;
+	height: 100px;
 }
 
 .logo {
 	margin-top: 0px;
 	max-width: 90%;
-	height: auto;
 }
 
 .navbar-inverse .about a {
@@ -27,23 +26,17 @@ body {
 }
 
 .food_pics {
+	top: 200px;
 	padding: 30px;
 }
 
 .nav.navbar-nav.navbar-right li a {
     color: #85d9da;
 }
-.navbar-inverse .navbar-brand {
-    color: #85d9da;
-}
 
-.navbar-right {
-	margin-top: 15px;
-}
 
 .avatar {
 	border-radius: 100%;
-	margin-top: -16px;
 	width: 100%;
 	height: auto;
 	
@@ -54,12 +47,6 @@ body {
 	color: #9a9ba5;
 	text-align: center;
 	font-size: 14px;
-}
-
-.img-responsive {
-	display: block;
-	height: auto;
-	max-width: 100%;
 }
 
 .logout {

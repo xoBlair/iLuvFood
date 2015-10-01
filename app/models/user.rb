@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
   def set_default_url
-  ActionController::Base.helpers.asset_path('default-avatar.png')
+  ActionController::Base.helpers.asset_path('default-avatar-resize.jpg')
 end
 
 end

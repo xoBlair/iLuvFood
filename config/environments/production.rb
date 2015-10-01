@@ -29,6 +29,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
   config.paperclip_defaults = {
     :storage => :s3,
+    :s3_region => 'us-west-1'
+    :region => ENV['AWS_REGION']
     :s3_credentials => {
       :bucket => ENV['S3_BUCKET_NAME'],
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],

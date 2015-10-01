@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
                     :format => { with: VALID_EMAIL_REGEX },
                     :confirmation => true
     # check to see if a supplied user password matches the hashed version in the database
-    def password=(password)
+  def password=(password)
     self.password_digest = BCrypt::Password.create(password)
   end
 
@@ -33,6 +33,7 @@ class User < ActiveRecord::Base
 
   has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: lambda { |avatar| avatar.instance.set_default_url}
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
+
 
   def set_default_url
   ActionController::Base.helpers.asset_path('default-avatar-resize.jpg')

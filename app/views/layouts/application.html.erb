@@ -6,6 +6,8 @@
   <title>Scarf</title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -15,7 +17,7 @@
     <div class="navbar-header col-md-2 col-sm-2 col-xs-2">
       <a class="navbar-brand" href="/home"><img class="logo" src="/assets/scarflogo.png"></a>
     </div>
-    <div class="about col-md-1 col-sm-1 col-xs-1"><a href="#">About Scarf</a></div>
+    <div class="about col-md-1 col-sm-1 col-xs-1"><a href="/about_me">About Scarf</a></div>
     
 	    <% if logged_in? %>
 	    <div class="row">

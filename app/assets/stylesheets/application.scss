@@ -72,6 +72,31 @@ body {
 	border-radius: 100%;
 }
 
+#about_body {
+	background:url(RecipeCard00.jpg);
+	background-size: 64% auto;
+	background-repeat: no-repeat;
+	background-position: top, center;
+}
+
+#about_heading {
+	font-family: 'Architects Daughter', cursive, bold;
+	margin-top: -2px;
+}
+
+#about {
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Indie Flower', cursive;
+}
+
+.scarflogo {
+	display: inline;
+	float: left;
+	width: 75%;
+	height: auto;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

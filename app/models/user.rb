@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
 
 
   def set_default_url
-  ActionController::Base.helpers.asset_path('default-avatar.png')
+  ActionController::Base.helpers.asset_path('default-avatar-resize.jpg')
 end
 
 end

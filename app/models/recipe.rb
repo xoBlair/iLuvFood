@@ -3,8 +3,12 @@ class Recipe < ActiveRecord::Base
 	has_many :tags, through: :taggings
 	belongs_to :user
 
-	has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/images/:style/missing.png"
+	has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: lambda { |avatar| avatar.instance.set_default_url}
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+
+    def set_default_url
+  ActionController::Base.helpers.asset_path('default-recipe.png')
+end
 
 	def tag_list
 	  self.tags.collect do |tag|
@@ -17,4 +21,5 @@ class Recipe < ActiveRecord::Base
   		new_or_found_tags = tag_names.collect { |name| Tag.find_or_create_by(name: name) }
   		self.tags = new_or_found_tags
 	end
+
 end

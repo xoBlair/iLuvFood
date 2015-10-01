@@ -69,7 +69,9 @@ class RecipesController < ApplicationController
       @recipe = Recipe.find(params[:id])
     end
 
+    
     # Never trust parameters from the scary internet, only allow the white list through.
+    ##########  add avatar here? #######
     def recipe_params
       params.require(:recipe).permit(:title, :image, :recipe, :user_id)
     end

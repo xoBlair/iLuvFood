@@ -28,14 +28,14 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
   config.paperclip_defaults = {
-  :storage => :s3,
-  region: ENV['AWS_REGION'],
-  :s3_credentials => {
+    :storage => :s3,
+    region: ENV['AWS_REGION'],
+    :s3_credentials => {
     :bucket => ENV['S3_BUCKET_NAME'],
     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
   }
-}
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true

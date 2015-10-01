@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users 
   resources :home
   resources :tags
+  resources :about_me
 
 
   get '/login' => 'sessions#login_form'

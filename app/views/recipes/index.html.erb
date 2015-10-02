@@ -1,29 +1,26 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Recipes</h1>
-
+<div class="row">
+  <div class="col-md-4"></div>
+  <h1 class="page_title col-md-4">Listing Recipes</h1>
+</div>
 <table>
   <div class="row">
     <% @recipes.each do |recipe| %>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-md-4 all_recipes">
           <div class="thumbnail">
           <img src="<%= recipe.image.url(:medium)%>">
             <div class="caption">
               <h3><%= recipe.title %></h3>
               <p><%= recipe.recipe %></p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-              <% recipe.tags.each do |tag| %>
+                <% recipe.tags.each do |tag| %>
                 <%= link_to tag.name, tag_path(tag) %>
               <% end %>
             </div>
           </div>
         </div>
     <% end %>
-
-    <%= link_to 'Back', "/home" %>
   </div>
 </table>
 
-<%= link_to 'New Recipe', new_recipe_path %>
-
+  
 

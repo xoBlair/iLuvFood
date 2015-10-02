@@ -7,10 +7,14 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
   end
 
+#shows all user recipes
+  def profile
+    @recipes = current_user.recipes
+  end
+
   # GET /recipes/1
   # GET /recipes/1.json
   def show
-    @recipe = Recipe.find(params[:id])
   end
 
   # GET /recipes/new
@@ -20,7 +24,7 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1/edit
   def edit
-    @recipe = Recipe.find(params[:id])
+    # @recipe = Recipe.find(params[:id])
   end
 
   # POST /recipes
@@ -67,7 +71,8 @@ class RecipesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
-      @recipe = Recipe.find(params[:id])
+      #@recipe = Recipe.find(params[:id])
+      @recipe = current_user.recipes.find(params[:id]) 
     end
 
     

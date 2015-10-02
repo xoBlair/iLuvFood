@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'profile/profile'
+  # get '/profile'
 
   resources :recipes
   resources :users 
@@ -9,11 +9,12 @@ Rails.application.routes.draw do
   resources :about_me
 
 
+
   get '/login' => 'sessions#login_form'
   post '/login' => 'sessions#check_login'
 
   get '/logout'  => 'sessions#destroy'
-  get '/profile' => 'profile#profile'
+  get '/profile' => 'recipes#profile'
   patch '/users' => 'users#update'
 
 

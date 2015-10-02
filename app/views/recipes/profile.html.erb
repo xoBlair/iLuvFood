@@ -1,7 +1,6 @@
 
 <div class="row">
-<h1><%= @current_user.first_name.capitalize %>'s recipes</h1>
-<% @recipes = @current_user.recipes %>
+<h1><%= current_user.first_name.capitalize %>'s recipes</h1>
 <% @recipes.each do |stuff|  %>
 <div class="col-sm-8 col-md-4">
     <div class="thumbnail">
@@ -14,7 +13,7 @@
         	<button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
 <ul class="list-inline">
   <li>
-    <%= link_to 'Delete', @recipes_url, method: :destroy, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Delete', recipe_path(stuff), method: :delete, data: { confirm: 'Are you sure?' } %>
   </li>
 
   <li>

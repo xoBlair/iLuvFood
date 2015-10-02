@@ -116,7 +116,7 @@ body {
 }
 
 .page_title {
-	margin-top: -10px;
+	margin-top: -10px;	
 	font-family: 'Architects Daughter', cursive, bold;
 }
 
@@ -124,6 +124,16 @@ body {
     height: 600px;
     overflow: scroll; /* Or scroll, depending on your needs*/
     width: 300px;
+}
+
+.instructions {
+	border: 100%;
+	border-width: 2px 0px 0px 0px;
+	border-style: solid;
+	border-color: #4169E1;
+	height: 25px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 25px;
 }
 
 /*

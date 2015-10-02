@@ -7,8 +7,8 @@ class Recipe < ActiveRecord::Base
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
     def set_default_url
-  ActionController::Base.helpers.asset_path('default-recipe.png')
-end
+  		ActionController::Base.helpers.asset_path('default-recipe.png')
+	end
 
 	def tag_list
 	  self.tags.collect do |tag|

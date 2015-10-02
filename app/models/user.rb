@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	has_many :recipes
+	has_many :recipes, dependent: :delete_all
 	has_secure_password
 	require 'bcrypt'
 

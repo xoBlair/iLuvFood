@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
+.home {
 	background: url(Dollarphotoclub-25op.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -73,11 +73,8 @@ body {
 }
 
 
-#about_body {
-	background:url(RecipeCard00.jpg);
-	background-size: 64% auto;
-	background-repeat: no-repeat;
-	background-position: top, center;
+body {
+	background-color: #F5F5F5;
 }
 
 #about_heading {
@@ -96,6 +93,26 @@ body {
 	float: left;
 	width: 75%;
 	height: auto;
+}
+
+.spacer {
+	height: 40px;
+}
+
+.card1 {
+	border: 100%;
+	border-width: 2px 0px 0px 0px;
+	border-style: solid;
+	border-color: red;
+	height: 40px;
+}
+
+.card {
+	border: 100%;
+	border-width: 2px 0px 0px 0px;
+	border-style: solid;
+	border-color: #4169E1;
+	height: 40px;
 }
 
 /*

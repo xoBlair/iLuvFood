@@ -4,8 +4,6 @@ ruby '2.2.0'
 
 gem 'puma'
 
-
-
 gem 'aws-sdk'
 
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"

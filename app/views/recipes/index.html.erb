@@ -1,26 +1,28 @@
 <p id="notice"><%= notice %></p>
-<div class="row">
-  <div class="col-md-4"></div>
-  <h1 class="page_title col-md-4">Scarf Recipes</h1>
-</div>
-<table>
+<section id="all_page">
   <div class="row">
-    <% @recipes.each do |recipe| %>
-        <div class="col-md-4 all_recipes">
-          <div class="thumbnail">
-          <img src="<%= recipe.image.url(:medium)%>">
-            <div class="caption">
-              <h3><%= recipe.title %></h3>
-              <p><%= recipe.recipe %></p>
-                <% recipe.tags.each do |tag| %>
-                <%= link_to tag.name, tag_path(tag) %>
-              <% end %>
+    <div class="col-md-4"></div>
+    <h1 class="page_title col-md-4">Scarf Recipes</h1>
+  </div>
+  <table>
+    <div class="row">
+      <% @recipes.each do |recipe| %>
+          <div class="col-md-4 all_recipes">
+            <div class="thumbnail">
+            <img src="<%= recipe.image.url(:medium)%>">
+              <div class="caption">
+                <h3><%= recipe.title %></h3>
+                <p><%= recipe.recipe %></p>
+                  <% recipe.tags.each do |tag| %>
+                  <%= link_to tag.name, tag_path(tag) %>
+                <% end %>
+              </div>
             </div>
           </div>
-        </div>
-    <% end %>
-  </div>
-</table>
+      <% end %>
+    </div>
+  </table>
+</section>
 
   
 

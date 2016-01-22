@@ -114,6 +114,24 @@ body {
     width: 300px;
 }
 
+#all_page {
+	margin-left: 50px;
+}
+
+#user_page {
+	margin-left: 50px;
+}
+
+#user_recipe {
+	font-family: 'Architects Daughter', cursive, bold;
+}
+
+.user_display {
+    height: 600px;
+    overflow: scroll; /* Or scroll, depending on your needs*/
+    width: 300px;	
+}
+
 .instructions {
 	border: 100%;
 	border-width: 2px 0px 0px 0px;
